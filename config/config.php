@@ -1,10 +1,17 @@
 <?php
 	
-	define( 'PATH', './public/' );
-	
-	$config = array( 	'driver'  => 'pgsql',
-						'host'	  => 'localhost',
-						'base'	  => 'dexter501',
-						'user'    => 'dexter',
-						'pass'    => '123456'
-				   );
+define( 'PATH', './public/' );
+
+function dd($var, $die = false) {
+	echo '<pre>';
+	var_dump($var);
+	echo '</pre>';
+	($die) ?: die();  
+}
+
+$config = array('driver'  => 'mysql',
+				'host'	  => '192.168.99.100',
+				'base'	  => 'dexter501',
+				'user'    => 'root',
+				'pass'    => 'root'
+			);
