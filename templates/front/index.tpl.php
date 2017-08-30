@@ -9,7 +9,7 @@
 <div class="carousel slide" id="myCarousel">
     <div class="carousel-inner">
     	<?php 
-    	use Model\Banners;
+    	use App\Model\Banners;
     	$banners = new Banners();
     	$banner_ativo = true;
     	foreach( $banners->listar() as $banner ):

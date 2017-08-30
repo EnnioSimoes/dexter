@@ -46,6 +46,6 @@
                 </div><!-- navbar -->
             <?php endif; ?>
 	        
-            <?php echo Lib\Mensagem::get(); ?>
+            <?php echo App\Lib\Mensagem::get(); ?>
 	        
             

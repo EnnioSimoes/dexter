@@ -2,6 +2,6 @@
 
 	require 'bootstrap.php';
 	
-	use Controller\Controller;
+	use App\Controller\Controller;
 	
 	new Controller( 'admin' );

@@ -1,9 +1,9 @@
 <?php
 
-namespace Controller;
+namespace App\Controller;
 
-use View\View;
-use Lib\Mensagem;
+use App\View\View;
+use App\Lib\Mensagem;
 
 class Controller 
 {
@@ -12,13 +12,13 @@ class Controller
 	private $model;
 	private $dados;
 
-	function __construct($tipo)
+	public function __construct($tipo)
 	{
 		// Recebe tipo como front/admin
 		// Pega o modulo ex. Clientes e carrega a View e Model dele
 		if (isset( $_GET['modulo'])) {
 			$this->view = $_GET['modulo'];
-			$model = "Model\\{$_GET['modulo']}";
+			$model = "App\\Model\\{$_GET['modulo']}";
 			$this->model = new $model();
 		} else {
 			$this->view = 'index';
