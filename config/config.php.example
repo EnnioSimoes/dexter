@@ -19,8 +19,8 @@ function dd($var, $die = false) {
 
 // Configuracoes do banco
 $config = array('driver'  => 'mysql',
-				'host'	  => '172.17.0.1',
-				'base'	  => 'dexter',
+				'host'	  => '192.168.99.100',
+				'base'	  => 'dexter501',
 				'user'    => 'root',
 				'pass'    => 'root'
 			);
