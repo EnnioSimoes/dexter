@@ -35,3 +35,6 @@ function appAutoloader($class) {
 }
 
 spl_autoload_register('appAutoloader');
+
+
+require 'vendor/autoload.php';
